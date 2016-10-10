@@ -12,77 +12,81 @@ class UserForm extends React.Component {
   }
   render() {
     return (
-      <Form model="user"
-        onSubmit={(user) => this.handleSubmit(user)}>
+      <div className="row form">
+        <div className="twelve columns">
+          <Form model="user"
+            onSubmit={(user) => this.handleSubmit(user)}>
 
-        <span> What is your current mood?</span>
-        <Field model=".mood" className="field">
-          <label>
-            <input type="radio" value="excited" />
-            excited
-          </label>
-          <label>
-            <input type="radio" value="tired" />
-            tired
-          </label>
-          <label>
-            <input type="radio" value="quiet" />
-            quiet
-          </label>
-          <label>
-            <input type="radio" value="loud" />
-            loud
-          </label>
-          <label>
-            <input type="radio" value="interested" />
-            interested
-          </label>
-        </Field>
-
-
-        <span>Which of the following categories appeals most to you at the moment?</span>
-        <Field model=".category" className="field">
-          <label>
-            <input type="radio" value="Art" />
-            Art
-          </label>
-          <label>
-            <input type="radio" value="History" />
-            History
-          </label>
-          <label>
-            <input type="radio" value="Stories" />
-            Stories
-          </label>
-          <label>
-            <input type="radio" value="Music" />
-            Music
-          </label>
-        </Field>
-
-        <span>Which is your favourite out of the following?</span>
-        (think of something to go here)
-
-        <span>pick a dog</span>
-        (pick some dogs)
-
-        <span>Would you like us to include your location?</span>
-        <Field model=".location" className="field">
-          <label>
-            <input type="radio" value="yes" />
-            yes
-          </label>
-          <label>
-            <input type="radio" value="no" />
-            no
-          </label>
-        </Field>
+            <span> What is your current mood?</span>
+            <Field model=".mood" className="field">
+              <label>
+                <input type="radio" value="excited" />
+                excited
+              </label>
+              <label>
+                <input type="radio" value="tired" />
+                tired
+              </label>
+              <label>
+                <input type="radio" value="quiet" />
+                quiet
+              </label>
+              <label>
+                <input type="radio" value="loud" />
+                loud
+              </label>
+              <label>
+                <input type="radio" value="interested" />
+                interested
+              </label>
+            </Field>
 
 
-        <button type="submit">
-          Finish registration!
-        </button>
-      </Form>
+            <span>Which of the following categories appeals most to you at the moment?</span>
+            <Field model=".category" className="field">
+              <label>
+                <input type="radio" value="Art" />
+                Art
+              </label>
+              <label>
+                <input type="radio" value="History" />
+                History
+              </label>
+              <label>
+                <input type="radio" value="Stories" />
+                Stories
+              </label>
+              <label>
+                <input type="radio" value="Music" />
+                Music
+              </label>
+            </Field>
+
+            <span>Which is your favourite out of the following?</span>
+            (think of something to go here)
+
+            <span>pick a dog</span>
+            (pick some dogs)
+
+            <span>Would you like us to include your location?</span>
+            <Field model=".location" className="field">
+              <label>
+                <input type="radio" value="yes" />
+                yes
+              </label>
+              <label>
+                <input type="radio" value="no" />
+                no
+              </label>
+            </Field>
+
+
+            <button type="submit">
+              Finish registration!
+            </button>
+          </Form>
+        </div>
+      </div>
     );
   }
 }

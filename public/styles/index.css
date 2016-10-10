@@ -15,7 +15,6 @@ img.icon {
   height: 100%;
 }
 
-
 /* Row Specific */
 .landing {
   display: flex;
@@ -55,7 +54,19 @@ div.images img {
   margin: 0 25px;
 }
 
+/* Row Form */
+div.form {
+  margin: 25px;
+}
 
+span {
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+div.field label input {
+  margin: 10px;
+}
 
 /* Row Info */
 .info {
