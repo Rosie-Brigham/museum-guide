@@ -7,7 +7,8 @@ class UserForm extends React.Component {
     console.log(user)
     // Do whatever you like in here.
     // You can use actions such as:
-    // dispatch(actions.submit('user', somePromise));
+    console.log(dispatch)
+    dispatch(actions.submit('user', console.log(user)));
     // etc.
   }
   render() {
