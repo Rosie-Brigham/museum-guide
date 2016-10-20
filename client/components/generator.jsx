@@ -1,3 +1,4 @@
+// CURRENTLY NOT BEING USED! OLD OPTION< POSSIBLY TO GO.
 import React from 'react'
 
 var Generator = React.createClass({
