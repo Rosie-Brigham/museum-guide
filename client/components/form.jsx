@@ -4,20 +4,22 @@ import { Field, Control, Form, actions } from 'react-redux-form';
 class UserForm extends React.Component {
   handleSubmit(user) {
     const { dispatch } = this.props;
-    console.log(user)
     // Do whatever you like in here.
     // You can use actions such as:
-    // foo
-    console.log(dispatch)
     dispatch(actions.submit('user', console.log(user)));
-    // etc.
   }
+
+  isDisabled() {
+    return !!this.props.hasVoted
+  }
+
   render() {
     return (
       <div className="row form">
         <div className="twelve columns">
           <Form model="user"
-            onSubmit={(user) => this.handleSubmit(user)}>
+            onSubmit={(user) => this.handleSubmit(user)}
+            disabled={this.isDisabled()}>
 
             <span> What is your current mood?</span>
             <Field model=".mood" className="field">
