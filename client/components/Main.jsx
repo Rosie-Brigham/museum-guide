@@ -1,9 +1,6 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
 
-// We'll create this in step 3.
-import store from '../store.js';
 
 
 import Home from './home.jsx'
@@ -22,13 +19,11 @@ var Main = React.createClass({
 
   render: function() {
     return (
-      <Provider store={ store }>
-        <section>
-          <Home/>
-          <Generator hasVoted={this.props.hasVoted} result={this.props.result} />
-          <Info/>
-        </section>
-      </Provider>
+      <section>
+        <Home/>
+        <Generator hasVoted={this.props.hasVoted} result={this.props.result} />
+        <Info/>
+      </section>
     )
   },
 })

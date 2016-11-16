@@ -9,14 +9,14 @@ import {expect} from 'chai';
 
 describe('UserForm', () => {
 
-  it('renders a form', () => {
-    const component = renderIntoDocument(
-      <UserForm/>
-    );
-    const buttons = scryRenderedDOMComponentsWithTag(component, 'form');
+  // it('renders a form', () => {
+  //   const component = renderIntoDocument(
+  //     <UserForm/>
+  //   );
+  //   const buttons = scryRenderedDOMComponentsWithTag(component, 'form');
 
-    expect(buttons.length).to.equal(2);
-    expect(buttons[0].textContent).to.equal('foo');
-  });
+  //   expect(buttons.length).to.equal(2);
+  //   expect(buttons[0].textContent).to.equal('foo');
+  // });
 
 });
